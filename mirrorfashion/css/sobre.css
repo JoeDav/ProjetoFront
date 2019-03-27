@@ -1,21 +1,33 @@
 /* Corpo da página */
 body {
     color: #333333;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    width: 940px;
 }
 /* títulos da página */
 h1 {
     background-image: url("../img/sobre-background.jpg");
+    padding: 10px;
 }
 /* subtítulos da página */
 h2 {
     border-bottom: 3px solid #333333;
+    margin-top: 30px;
+}
+p {
+    padding: 15px;
+    text-indent: 30px;
 }
 figure {
     background-color: #F2EDED;
     border: 1px #333333;
     text-align: center;
+    padding: 15px;
+    margin: 30px;
 }
 figcaption {
     font-style: italic;
+    padding-top: 10px;
 }
