@@ -1,6 +1,3 @@
-p {
-   
-}
 /* corpo da pagina */
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -11,22 +8,45 @@ body {
     background: url(../img/sacola.png) no-repeat top right;
     font-size: 14px;
     padding-right: 35px;
-    padding-top: 5px;
+    padding-top: 8px;
     text-align: right;
     width: 140px;
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+}
+/* header */
+header {
+    position: relative;
 }
 /* menu superior da janela */
+.menu-opcoes {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
 .menu-opcoes ul{
     font-size: 15px;
 }
 .menu-opcoes a {
     color: #003366;
 }
-
-
-/* cibtauber oara nargear automaticamente */
+/* menu superior ul li */
+.menu-opcoes ul li {
+    display: inline;
+    margin-left: 20px;
+}
+/* container para margear automaticamente */
 .container {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+    margin: 0 auto;
+    width: 940px;
+}
+/* estilizando a area central da página */
+.busca,
+.menu-departamentos {
+    float: left;
+}
+.menu-departamentos {
+    clear: left;
+    text-transform: uppercase;
 }

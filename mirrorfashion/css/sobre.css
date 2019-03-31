@@ -6,11 +6,6 @@ body {
     margin-right: auto;
     width: 940px;
 }
-/* títulos da página */
-h1 {
-    background-image: url("../img/sobre-background.jpg");
-    padding: 10px;
-}
 /* subtítulos da página */
 h2 {
     border-bottom: 3px solid #333333;
