@@ -1,9 +1,187 @@
-p {
-    color: blue;
-    background-color: yellow;
-}
 /* corpo da pagina */
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #333333;
+}
+/* sacola */
+.sacola {
+    background: url(../img/sacola.png) no-repeat top right;
+    font-size: 14px;
+    padding-right: 35px;
+    padding-top: 8px;
+    text-align: right;
+    width: 140px;
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+}
+/* header */
+header {
+    position: relative;
+}
+/* menu superior da janela */
+.menu-opcoes {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.menu-opcoes ul{
+    font-size: 15px;
+}
+.menu-opcoes a {
+    color: #003366;
+}
+/* menu superior ul li */
+.menu-opcoes ul li {
+    display: inline;
+    margin-left: 20px;
+}
+/* container para margear automaticamente */
+.container {
+    margin: 0 auto;
+    width: 940px;
+}
+/* estilizando a area central da página */
+.busca,
+.menu-departamentos {
+    background-color: #dcdcdc;
+    font-weight: bold;
+    text-transform: uppercase;
 
+    margin-right: 10px;
+    width: 230px;
+    float: left;
+    border-radius: 5px
+}
+.menu-departamentos {
+    clear: left;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.busca h2,
+.busca form,
+.menu-departamentos h2 {
+    margin: 10px;
+}
+
+.menu-departamentos li {
+    background-color: rgb(189, 189, 189);
+    margin-bottom: 1px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.menu-departamentos a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.busca input {
+    vertical-align: middle;
+}
+.busca input[type=search] {
+    width: 170px;
+}
+.destaque {
+    margin-top: 10px;
+}
+
+/* definindo estilos para parte do container painel */
+.painel {
+    margin: 10px 0;
+    padding: 10px;
+    width: 445px;
+    height: 400px;
+    border-radius: 5px;
+}
+/* definido flutuar a esquerda de novidades */
+.novidades {
+    float: left;
+}
+/* definindo flutuar a direita de mais-vendidos */
+.mais-vendidos {
+    float: right;
+}
+
+/* painel itens da lista  */
+.painel li {
+    display: inline-block;
+    vertical-align: top;
+    width: 140px;
+
+    margin: 2px;
+    padding-bottom: 10px;
+}
+/* definindo titulo h2 */
+.painel h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+}
+.painel a {
+    color: #333;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.novidades {
+    background-color: #a8a8a8;
+}
+
+.mais-vendidos {
+    background-color: #6f6f79;
+}
+/* bordas para as imagens*/
+img {
+    border-radius: 5px;
+}
+
+/* rodapé e imagem de fundo do rodapé*/
+footer {
+    background-image: url(../img/fundo-rodape.png);
+    clear: both;
+    padding: 18px 0;
+    border-radius: 5px;
+}
+/* posição relativa */
+footer .container {
+    position: relative;    
+}
+/* distancia da dentro do container */
+footer img {
+    padding: 0px 10px;
+}
+/* posicionando as imagens de link do rodapé */
+.social {
+    position: absolute;
+    top: 12px;
+    right: 0;
+}
+.social li {
+    float: left;
+    margin-left: 25px;    
+    padding-right: 10px;
+}
+.social a {
+    /* tamanho da imagem */
+    height: 32px;
+    width: 32px;
+
+    /* imagem replacement */
+    display: block;
+    text-indent: -9999px;
+}
+/* imagem dos link das redes sociais */
+.social a[href*="facebook.com"] {
+    /* imagem com fundo */
+    background-image: url(../img/facebook.png);
+}
+.social a[href*="twitter.com"] {
+    background-image: url(../img/twitter.png);
+}
+.social a[href*="plus.google.com"] {
+    background-image: url(../img/googleplus.png);
 }
