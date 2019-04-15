@@ -1,11 +1,3 @@
-/* Corpo da página */
-body {
-    color: #333333;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-left: auto;
-    margin-right: auto;
-    width: 940px;
-}
 /* subtítulos da página */
 h2 {
     border-bottom: 3px solid #333333;

@@ -51,6 +51,7 @@ header {
     margin-right: 10px;
     width: 230px;
     float: left;
+    border-radius: 5px
 }
 .menu-departamentos {
     clear: left;
@@ -66,8 +67,9 @@ header {
 
 .menu-departamentos li {
     background-color: rgb(189, 189, 189);
-    margin-bottom: 2px;
+    margin-bottom: 1px;
     padding: 5px 10px;
+    border-radius: 5px;
 }
 .menu-departamentos a {
     color: #333333;
@@ -82,4 +84,104 @@ header {
 }
 .destaque {
     margin-top: 10px;
+}
+
+/* definindo estilos para parte do container painel */
+.painel {
+    margin: 10px 0;
+    padding: 10px;
+    width: 445px;
+    height: 400px;
+    border-radius: 5px;
+}
+/* definido flutuar a esquerda de novidades */
+.novidades {
+    float: left;
+}
+/* definindo flutuar a direita de mais-vendidos */
+.mais-vendidos {
+    float: right;
+}
+
+/* painel itens da lista  */
+.painel li {
+    display: inline-block;
+    vertical-align: top;
+    width: 140px;
+
+    margin: 2px;
+    padding-bottom: 10px;
+}
+/* definindo titulo h2 */
+.painel h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+}
+.painel a {
+    color: #333;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.novidades {
+    background-color: #a8a8a8;
+}
+
+.mais-vendidos {
+    background-color: #6f6f79;
+}
+/* bordas para as imagens*/
+img {
+    border-radius: 5px;
+}
+
+/* rodapé e imagem de fundo do rodapé*/
+footer {
+    background-image: url(../img/fundo-rodape.png);
+    clear: both;
+    padding: 18px 0;
+    border-radius: 5px;
+}
+/* posição relativa */
+footer .container {
+    position: relative;    
+}
+/* distancia da dentro do container */
+footer img {
+    padding: 0px 10px;
+}
+/* posicionando as imagens de link do rodapé */
+.social {
+    position: absolute;
+    top: 12px;
+    right: 0;
+}
+.social li {
+    float: left;
+    margin-left: 25px;    
+    padding-right: 10px;
+}
+.social a {
+    /* tamanho da imagem */
+    height: 32px;
+    width: 32px;
+
+    /* imagem replacement */
+    display: block;
+    text-indent: -9999px;
+}
+/* imagem dos link das redes sociais */
+.social a[href*="facebook.com"] {
+    /* imagem com fundo */
+    background-image: url(../img/facebook.png);
+}
+.social a[href*="twitter.com"] {
+    background-image: url(../img/twitter.png);
+}
+.social a[href*="plus.google.com"] {
+    background-image: url(../img/googleplus.png);
 }
