@@ -37,3 +37,17 @@ figcaption {
     float: right;
     margin: 0 0 10px 10px;
 }
+
+/* 6.4 exercicios seletores e pseudo-classes */
+/* 1- alterar a pagina sobre.html, primeiras letras dos paragrafos fiquem em negrito */
+p::first-letter {
+    font-weight: bold;
+}
+/* 2 - remover apenas a identação do primeiro paragrafo da pagina */
+h1 + p {
+    text-indent: 0;
+}
+/* 3 - seleciona a primeira linha do texto usando a propriedade variante para deixar a fonte small */
+:not(p) + p::first-line {
+    font-variant: small-caps;
+}
