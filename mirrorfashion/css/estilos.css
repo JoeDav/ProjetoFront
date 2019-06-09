@@ -56,6 +56,7 @@ header {
     margin: 0 auto;
     width: 940px;
 }
+
 /* estilizando a area central da página */
 .busca,
 .menu-departamentos {
@@ -126,11 +127,9 @@ header {
     display: inline-block;
     vertical-align: top;
     width: 140px;
-
     margin: 2px;
     padding-bottom: 10px;
-}
-/* definindo titulo h2 */
+}/* definindo titulo h2 */
 .painel h2 {
     font-size: 24px;
     font-weight: bold;
@@ -230,7 +229,7 @@ footer img {
 /* 6.4 - exercicios */
 /* 4 - mudar a cor do texto ao passar o mouse em cima (menu opcoes)*/
 .menu-opcoes a:hover {
-    color: rgb(126, 196, 236);
+    color: rgb(165, 8, 8);
 }
 .menu-opcoes a:active {
     color: #867DC6;
@@ -242,7 +241,7 @@ Altere o arquivo estilos.css com essa lógica.*/
     display: none;
 }
 .menu-departamentos li:hover ul {
-   display: block;
+    display: block;
 }
 .menu-departamentos ul ul li {
     background-color: #dcdcdc;
@@ -263,4 +262,41 @@ Altere o arquivo estilos.css com essa lógica.*/
     padding: 5px;
     opacity: 0.7;
 }
-/* 2 - pagina sobre */
+/* 6.16 - Exercicios: CSS3 Transform e Transition*/
+/* No exercício anterior, fazemos todos girarem anti-horário. Vamos sobrescrever essa regra para os elementos
+pares usando o seletor :nth-child: 
+se for par rotaciona pada direita */
+.painel li:nth-child(2n) :hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: 0.5s ease-in;
+    box-shadow: 0px 0px 15px #ff0000;
+    transform: scale(1.02) rotate(2deg);
+}
+/* se for impar roda para esquerda */
+.painel li:nth-child(2n-1) :hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: 0.5s ease-in;
+    box-shadow: 0px 0px 15px #ff0000;
+    transform: scale(1.02) rotate(-2deg);
+}
+
+/* 6) (opcional) Repare como a animação ocorre apenas quando passamos o mouse em cima, mas quando
+tiramos, a volta do efeito não é animada.
+Podemos habilitar a animação na volta do elemento para o estado normalmovendo as regras de transição
+para o li em si (e não só no :hover).
+.painel li {
+transition: 0.7s;
+/* 7) (opcional) Umterceiro argumento para a função de transição é a função de animação, que controla como
+o efeito executa de acordo com o tempo.
+Por padrão, os efeitos são lineares, mas podemos obter resultados mais interessantes com outras opções
+como ease, ease-in, ease-out (e até o avançado cubic-bezier()).
+Por exemplo:
+.painel li:hover {
+transition: 0.7s ease-in;
+}
+.painel li {
+transition: */
+} */
+.painel li {
+    transition: 0.5s ease-out;
+}

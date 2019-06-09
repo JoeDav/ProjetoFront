@@ -51,39 +51,39 @@ li:nth-child(3) {
 /*li:nth-child(2n+1) { color: blue; } /*elementos impares*/
 
 /* seleciona o link no exato momento em que passamos o mouse por cima dele */
-a:hover {
+/* a:hover {
     background-color: brown;
 }
-/* seleciona todas as ancoras que tem o atributo href, ou seja, links */
+/* seleciona todas as ancoras que tem o atributo href, ou seja, links 
 a:link {
     background-color: bisque;
 }
-/* seleciona todos os links cujo valor do href é endereço ja visitado */
+/* seleciona todos os links cujo valor do href é endereço ja visitado 
 a:visited {
     background-color: #00FF00;
 }
-/* seleciona o link no exatmo momento em que clicamos nele */
+/* seleciona o link no exatmo momento em que clicamos nele 
 a:active {
     background-color: blueviolet;
 }
-/* seleciona a primeira letra do texto p */
+/* seleciona a primeira letra do texto p 
 p:first-letter {
     font-size: 200%;
 }
-/* para selecionar a primeira linha(apenas com texto grande) */
+/* para selecionar a primeira linha(apenas com texto grande) 
 p:first-line {
     font-style: italic;
 }
-/* seleciona a primeira parte do e insere(content) um colchetes*/
+/* seleciona a primeira parte do e insere(content) um colchetes
 a:before {
     content: '[';
 }
-/* seleciona a ultima parte do e insere(content) um colchetes*/
+/* seleciona a ultima parte do e insere(content) um colchetes
 a::after {
     content: ']';
 }
-/* coloca externo ao lado de todos os links externos de nossa página */
-a[href^='http://']:after { /* pega todos os elementos que começam com http:// e coloca a palavra (externo) depois */
+/* coloca externo ao lado de todos os links externos de nossa página 
+a[href^='http://']:after { /* pega todos os elementos que começam com http:// e coloca a palavra (externo) depois 
     content: ' (exeterno)';
 }
 
@@ -94,21 +94,21 @@ div {
     height: 150px;
 }
 .a {
-    /* todas as bordas arredondadas com um raio de 15px */
+    /* todas as bordas arredondadas com um raio de 15px 
     border-radius: 15px;
     background-color: black;
 }
 .b {
     /* borda superior esquerda e inferior direita com 5px
-       borda superior direita e inferior esquerda com 20px */
+       borda superior direita e inferior esquerda com 20px 
 
     border-radius: 5px 20px;
     background-color: black;
 }
 .c {
-    /* borda superior esquerda com 5px */
-    /* borda superior direita e inferior esquerda com 20px */
-    /* borda infeior direita com 50px */
+    /* borda superior esquerda com 5px 
+    /* borda superior direita e inferior esquerda com 20px 
+    /* borda infeior direita com 50px 
 
     border-radius: 5px 20px 50px;
 }
@@ -117,56 +117,56 @@ div {
     /*borda superior esquerda com 5px
     borda superior direita com 20px
     borda inferior direita com 50px
-    bordar inferior esquerda com 100px */
+    bordar inferior esquerda com 100px 
     border-radius: 5px 20px 50px 100px;
 }
-/* 6.7 - CSS3: text-shadow */
+/* 6.7 - CSS3: text-shadow 
 
 p {
-    /* posiciona a sombra 10 de distancia para baixo e para a direita do texto original */
+    /* posiciona a sombra 10 de distancia para baixo e para a direita do texto original 
     text-shadow: 10px 10px red;
 }
 p {
-    /* pode ainda receber um grau de espalhamento */
-    /* posiciona a sombra 10 de distancia para baixo e para a direita do texto original e os 5px significa o grau de espalhamento */
+    /* pode ainda receber um grau de espalhamento 
+    /* posiciona a sombra 10 de distancia para baixo e para a direita do texto original e os 5px significa o grau de espalhamento 
     text-shadow: 10px 10px 5px red;
 }
 .duassombras {
     /*É possível até passar mais de uma sombra ao mesmo tempo para o mesmo elemento:
-text-shadow: */
+text-shadow: 
     text-shadow:  10px 10px 5px red, -5px -5px 4px red;
 }
 /* 6.8 - box-shadow */
-/* sombras em qualquer elemento com box shadow e passar um terceiro valor para blur */
+/* sombras em qualquer elemento com box shadow e passar um terceiro valor para blur 
 .boxshadow {
     box-shadow: 20px 20px 5px gray;
 }
 
 .aumentar-diminuir {
     /* Diferentemente do text-shadow, o box-shadow suporta ainda mais um valor que faz a sombra aumentar ou
-    diminuir: */
+    diminuir: 
     box-shadow: 20px 20px 20px 30px gray;
 }
 
 .bordainterna {
-    /* Por fim, é possível usar a keyword inset para uma borda interna ao elemento: */
+    /* Por fim, é possível usar a keyword inset para uma borda interna ao elemento: 
     box-shadow: inset 0 0 40px gray; 
 }
 
-/* gradiente linar */
+/* gradiente linar 
 .linear {
     background: linear-gradient(white, blue);
 }
-/* radial */
+/* radial 
 .radial {
     background: radial-gradient(white, blue);
 }
-/* gradiente com angulações */
+/* gradiente com angulações 
 .gradiente {
     background: linear-gradient(45deg, #ffbca1 0%, #cbebff 47%, #ffbca1 100%);
     transform: rotate(-10deg);
 }
-/* transitions */
+/* transitions 
 .transition {
     background: linear-gradient(brown, blue);
     position: relative;
@@ -176,6 +176,48 @@ text-shadow: */
 .transition:hover {
     background: linear-gradient(blue, purple);
     top: 50;
-    /* transform: scale(1.2); */
+    /* transform: scale(1.2); 
     transition: top 2s ease-in;
+}
+*/
+/* p {
+    color: navy;
+}
+p {
+    font-size: 16px;
+}
+
+/* Quando há conito entre propriedades de seletores equivalentes, ou até mesmo em um mesmo seletor, é
+aplicada a propriedade declarada depois, como no exemplo a seguir:
+p {
+    color: navy;
+    font-size: 12px;
+}
+p {
+    font-size: 16px;
+}*/
+
+p { /* valor de especificidade: 001 */
+    color: blue;
+}
+.destaque { /* valor de especificidade: 010 */
+    color: red;
+}
+#cabecalho { /* valorde especificidade: 100 */
+    color: green;
+}
+/* seletores combinados compostos basta somar os valores em suas determinadas posições */
+#rodape p { /* valor de especificidade: 101 */
+    font-size: 11;
+}
+
+@media screen {
+    body {
+        font-size: 16px;
+    }
+}
+@media (max-width: 480px) {
+    body {
+        font-size: 78px;
+    }
 }

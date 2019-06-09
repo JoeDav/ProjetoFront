@@ -1,0 +1,21 @@
+.container {
+    width: 96%;
+}
+header h1 {
+    text-align: center;
+}
+header h1 img {
+    max-width: 50%;
+}
+.sacola {
+    display: none;
+}
+.menu-opcoes {
+    position: static;
+    text-align: center;
+}
+/* ajusta o espaçamento do menu superior */
+.menu-opcoes ul li {
+    display: inline-block;
+    margin: 5px;
+}
